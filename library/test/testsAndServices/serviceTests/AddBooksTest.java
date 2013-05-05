@@ -24,12 +24,12 @@ import org.testng.annotations.Test;
  *
  * @author Wesley
  */
-public class AddTBooksTest {
+public class AddBooksTest {
     private static BookCrudService bookCrudService;
     private static AddToBooksService addToBooksService;
     private static ApplicationContext ctx;
     
-    public AddTBooksTest() {
+    public AddBooksTest() {
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
