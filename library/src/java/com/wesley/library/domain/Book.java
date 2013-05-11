@@ -41,6 +41,9 @@ public class Book implements Serializable {
     @ManyToMany
     private List<Author> author;
 
+    public Book() {
+    }
+
     public List<Author> getAuthor() {
         return author;
     }
@@ -128,6 +131,16 @@ public class Book implements Serializable {
     @Override
     public String toString() {
         return "com.wesley.library.domain.Book[ id=" + id + " ]";
+    }
+
+    public Book(Long id, String isbn, String bookTitle, Category category, Publisher publisher, Supplier supplier, List<Author> author) {
+        this.id = id;
+        this.isbn = isbn;
+        this.bookTitle = bookTitle;
+        this.category = category;
+        this.publisher = publisher;
+        this.supplier = supplier;
+        this.author = author;
     }
     
 }
