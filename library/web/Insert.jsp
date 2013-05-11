@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Apr 20, 2013, 4:37:20 PM
+    Document   : Insert
+    Created on : May 11, 2013, 11:05:20 PM
     Author     : Wesley
 --%>
 
@@ -9,14 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Home Page</title>
+        <title>JSP Page</title>
     </head>
     <body>
-        <h1>Home page</h1>
-        
-        <form action="Book.jsp">
-            <input type="submit" value="Books"/>
-        </form>
-        
+        <h1>Insert book!</h1>
     </body>
 </html>
