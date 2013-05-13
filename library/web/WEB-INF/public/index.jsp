@@ -5,6 +5,9 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,10 +16,10 @@
     </head>
     <body>
         <h1>Home page</h1>
+        <h2> ${msg.welcome}</h2>
+        <h3> Today is ${msg.today}</h3>
         
-        <form action="Book.jsp">
-            <input type="submit" value="Books"/>
-        </form>
+        <a href="Book">Book</a>
         
     </body>
 </html>

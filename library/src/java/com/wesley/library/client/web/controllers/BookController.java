@@ -4,9 +4,12 @@
  */
 package com.wesley.library.client.web.controllers;
 
-import com.wesley.library.client.web.models.Welcome;
-import java.util.Date;
+import com.wesley.library.app.factory.BookFactory;
+import com.wesley.library.domain.Book;
+import java.util.HashMap;
+import java.util.Map;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,16 +19,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author Wesley
  */
 @Controller
-public class IndexController {
-     @RequestMapping(value="/",method=RequestMethod.GET)
-    public String home(ModelMap model) {
-         //DON'T CREATE OBJECTS LIKE THIS, USE FACTORIES
-         Welcome message = new Welcome();
-         Date d = new Date(12,3,23);
-         message.setToday(d);
-         message.setWelcome("Welcome to the Home Page");
-         model.addAttribute("msg", message);
-        return "index";
-    }
+public class BookController {
     
+    @RequestMapping(value="/Book",method=RequestMethod.GET)
+    public String home(ModelMap model) {
+        
+        return "Book";
+    }
 }
