@@ -3,23 +3,20 @@
     Created on : Apr 20, 2013, 4:37:20 PM
     Author     : Wesley
 --%>
+<jsp:include page="header/include.jsp" />
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib prefix="s" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Home Page</title>
-    </head>
-    <body>
-        <h1>Home page</h1>
-        <h2> ${msg.welcome}</h2>
-        <h3> Today is ${msg.today}</h3>
-        
-        <a href="Book">Book</a>
-        
-    </body>
-</html>
+<body>
+    <h1 class="header">Hello World!</h1>
+    <h2> ${msg.welcome}</h2>
+    <h3> Today is ${msg.today}</h3>
+    <button class="btn btn-large btn-block btn-primary" type="button">This is The Landing Page for the Application Menu</button>
+
+<center>
+    <button class="btn btn-success btn-large" type="button"><a href="form">Create book</a></button>
+    <button class="btn btn btn-success btn-large" type="button"><a href="courses">List books</a></button>
+</center>
+
+
+</body>
+
+<jsp:include page="footer/include.jsp" />

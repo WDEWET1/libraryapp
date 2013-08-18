@@ -13,7 +13,7 @@
  
     <!-- Scans within the base package of the application for @Components to configure as beans -->
     <!-- @Controller, @Service, @Configuration, etc. -->
-    <context:component-scan base-package="com.wesley.library" />
+   <context:component-scan base-package="com.wesley.library.client" />
     
     <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
     
@@ -40,4 +40,3 @@
     </bean>
 
 </beans>
-

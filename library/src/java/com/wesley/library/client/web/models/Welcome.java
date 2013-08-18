@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author Wesley
+ * @author boniface
  */
 public class Welcome implements Serializable{
     
@@ -31,4 +31,7 @@ public class Welcome implements Serializable{
     public void setToday(Date today) {
         this.today = today;
     }
+    
+    
+    
 }
